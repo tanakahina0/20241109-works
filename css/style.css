@@ -1,0 +1,116 @@
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+main {
+  text-align: center;
+  align-items: center;
+}
+main .flex-area {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto 2rem auto;
+}
+main .flex-area table {
+  width: 300px;
+  height: 300px;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+main .flex-area table tr {
+  background-color: #fcfcfc;
+}
+main .flex-area table td {
+  border: solid 1px #000;
+}
+main .flex-area table td button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+main .flex-area .game-area td button[data-shape=cat] {
+  background: url(../img/cat.jpg) no-repeat;
+  background-size: 100%;
+}
+main .flex-area .game-area td button[data-shape=dog] {
+  background: url(../img/dog.jpg) no-repeat;
+  background-size: 100%;
+}
+main .block-area {
+  text-align: left;
+}
+main .block-area .hand-list {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main .block-area .hand-list li {
+  width: 96px;
+  height: 96px;
+  cursor: pointer;
+}
+main .block-area .hand-list li:first-child {
+  margin-right: 10px;
+}
+main .block-area .hand-list li[data-shape=cat] {
+  background: url(../img/cat.jpg) no-repeat;
+  background-size: 100%;
+}
+main .block-area .hand-list li[data-shape=dog] {
+  background: url(../img/dog.jpg) no-repeat;
+  background-size: 100%;
+}
+main .block-area .turn-display {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .block-area section div {
+  margin-bottom: 15px;
+}
+main .win-message {
+  display: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ba2520;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+main .reset .reset-button {
+  display: none;
+  margin: 15px auto 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+main .reset .reset-button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 844px) {
+  .flex-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block-area {
+    margin-top: 20px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
